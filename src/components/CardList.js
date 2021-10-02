@@ -15,7 +15,7 @@ const CardList = ({ results }) => {
           key={item.objectID}
           title={item.title}
           author={item.author}
-          date={item.date}
+          date={item.createdAt}
         />
       ))}
     </div>

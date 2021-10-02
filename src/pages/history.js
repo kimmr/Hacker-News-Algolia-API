@@ -1,8 +1,11 @@
-const History = (props) => {
-    console.log(props.location);
+import { useContext } from "react";
+import SearchContext from "../store/SearchContext";
+
+const History = () => {
+    const msg = useContext(SearchContext);
 
     return (
-        <h1>This is History Page</h1>
+        <h1>{msg.searchHistory}</h1>
     );
 };
 
