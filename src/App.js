@@ -7,8 +7,14 @@ import SearchContext from './store/SearchContext';
 import { useMemo, useState } from 'react';
 
 function App() {
+  const [searchHistory, setSearchHistory] = useState('');
 
-  const [searchHistory, setSearchHistory] = useState("New hello from state");
+  /*
+  const providerSearch = useMemo(
+    () => ({ searchHistory, setSearchHistory }),
+    [searchHistory, setSearchHistory]
+  );
+  */
 
   return (
     <div>

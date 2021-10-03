@@ -1,5 +1,4 @@
 const Card = (props) => {
-    //onsole.log(props.title);
 
     return(
         <div className='resultCard'>

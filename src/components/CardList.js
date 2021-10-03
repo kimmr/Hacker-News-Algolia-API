@@ -6,8 +6,7 @@ const CardList = ({ results }) => {
   if (results) {
     data = results || [];
   }
-
-
+  
   return (
     <div className="result">
       {data.map((item) => (
@@ -15,7 +14,7 @@ const CardList = ({ results }) => {
           key={item.objectID}
           title={item.title}
           author={item.author}
-          date={item.createdAt}
+          date={item.created_at}
         />
       ))}
     </div>
