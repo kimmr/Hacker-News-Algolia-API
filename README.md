@@ -7,8 +7,9 @@
 
 ## General info
 This web application has two pages users can navigate to search and history. (total of 3 pages including home)\
+\
 Search page lets you search the Hacker News Algolia API and displays a list of results\
-History page shows you a list of their past searches from this current session\
+History page shows you a list of their past searches from this current session
 
 ## Technologies
 Project is created with:
