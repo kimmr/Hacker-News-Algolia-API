@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import Card from '../components/Card';
+import HistoryList from '../components/HistoryList';
 import SearchContext from '../store/SearchContext';
 
 const History = () => {
@@ -7,15 +7,15 @@ const History = () => {
 
   let data = [];
 
+  // Add to data as an array
   if (msg) {
     data = msg || [];
   }
 
-
   return (
     <div className="result">
       {data.map((item) => (
-        <Card key={item.id} title={item.title} />
+        <HistoryList key={item.id} title={item.title} />
       ))}
     </div>
   );

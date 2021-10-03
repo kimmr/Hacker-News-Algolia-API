@@ -1,16 +1,16 @@
-import Card from './Card';
+import Search from './Search';
 
-const CardList = ({ results }) => {
+const SearchList = ({ results }) => {
   let data = [];
 
   if (results) {
     data = results || [];
   }
-  
+
   return (
     <div className="result">
       {data.map((item) => (
-        <Card
+        <Search
           key={item.objectID}
           title={item.title}
           author={item.author}
@@ -21,4 +21,4 @@ const CardList = ({ results }) => {
   );
 };
 
-export default CardList;
+export default SearchList;

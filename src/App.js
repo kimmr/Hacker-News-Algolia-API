@@ -9,12 +9,10 @@ import { useMemo, useState } from 'react';
 function App() {
   const [searchHistory, setSearchHistory] = useState('');
 
-  /*
   const providerSearch = useMemo(
     () => ({ searchHistory, setSearchHistory }),
     [searchHistory, setSearchHistory]
   );
-  */
 
   return (
     <div>
@@ -23,7 +21,7 @@ function App() {
         <Route path="/" exact>
           <Redirect to="/home" />
         </Route>
-        <SearchContext.Provider value={{searchHistory, setSearchHistory}}>
+        <SearchContext.Provider value={providerSearch}>
           <Route path="/search" component={Search}>
             <Search />
           </Route>
