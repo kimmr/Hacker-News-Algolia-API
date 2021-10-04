@@ -9,6 +9,7 @@ const SearchBar = (props) => {
 
   const inputHandler = (event) => {
     const text = event.target.value;
+
     setSearchText(text);
   };
 
@@ -16,7 +17,6 @@ const SearchBar = (props) => {
     event.preventDefault();
 
     onSearch(searchText);
-
     setSearchText(''); //clear search
   };
 

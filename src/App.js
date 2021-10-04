@@ -9,6 +9,7 @@ import { useMemo, useState } from 'react';
 function App() {
   const [searchHistory, setSearchHistory] = useState('');
 
+  // memorize search history using useMemo
   const providerSearch = useMemo(
     () => ({ searchHistory, setSearchHistory }),
     [searchHistory, setSearchHistory]

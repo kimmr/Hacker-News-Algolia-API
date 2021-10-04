@@ -3,13 +3,12 @@ import HistoryList from '../components/HistoryList';
 import SearchContext from '../store/SearchContext';
 
 const History = () => {
-  const msg = useContext(SearchContext).searchHistory;
+  const searchResults = useContext(SearchContext).searchHistory;
 
   let data = [];
 
-  // Add to data as an array
-  if (msg) {
-    data = msg || [];
+  if (searchResults) {
+    data = searchResults || [];
   }
 
   return (

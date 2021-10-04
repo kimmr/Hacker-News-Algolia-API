@@ -8,7 +8,7 @@ import SearchContext from '../store/SearchContext';
 const Search = () => {
   const { setSearchHistory } = useContext(SearchContext);
 
-  const [state, setState] = useState({
+  const [search, setSearch] = useState({
     results: [],
   });
 
@@ -19,7 +19,7 @@ const Search = () => {
       return [{ title: text, id: Math.random().toString() }, ...prevHistory];
     });
 
-    setState((prevState) => {
+    setSearch((prevState) => {
       return { ...prevState, results: results.data.hits };
     });
   };
@@ -31,7 +31,7 @@ const Search = () => {
           Hacker News Search with API
         </h1>
         <SearchBar onSearch={onSearch} />
-        <SearchList results={state.results} />
+        <SearchList results={search.results} />
       </div>
     </div>
   );
