@@ -25,9 +25,9 @@ const Search = () => {
   };
 
   return (
-    <div className="App">
-      <div className="container SearchApp">
-        <h1 className="title is-2 has-text-centered">
+    <div>
+      <div>
+        <h1>
           Hacker News Search with API
         </h1>
         <SearchBar onSearch={onSearch} />
