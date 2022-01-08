@@ -20,8 +20,8 @@ Project is created with:
 	
 ## Screenshots
 <div align="center">
-    <img src="https://github.com/kimmr/Hacker-News-Algolia-API/blob/master/public/sc.png" width="400px"</img>
-    <img src="https://github.com/kimmr/Hacker-News-Algolia-API/blob/master/public/sc2.png" width="400px"</img> 
+    <img src="https://github.com/kimmr/Hacker-News-Algolia-API/blob/master/public/sc.png" width="1280px" height="720px"></img>
+    <img src="https://github.com/kimmr/Hacker-News-Algolia-API/blob/master/public/sc2.png" width="1280px" height="720px"></img> 
 </div>
 
 ## Setup
